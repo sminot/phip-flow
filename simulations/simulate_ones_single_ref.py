@@ -27,7 +27,7 @@ if __name__ == "__main__":
     reference = [f"refa" for _ in range(5)] 
     experiment = [f"expa" for _ in range(5)]
 
-    columns = ["ID","fastq_pattern","reference","experiment"]
+    columns = ["ID","fastq_pattern","reference","seq_dir"]
     df = pd.DataFrame(
         zip(range(len(reference)), fastq_pattern, reference, experiment), columns=columns
     )

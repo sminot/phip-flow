@@ -4,7 +4,7 @@
 
     "samples" : "simulations/simulate_ones_single_ref/samples/sample_metadata.csv",
 
-    "experiments" : {
+    "seq_dir" : {
         "expa" : "simulations/simulate_ones_single_ref/experiments/expa/some/path/"
     },
 

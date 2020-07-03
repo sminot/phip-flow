@@ -108,7 +108,7 @@ def generate_directory_structure(config_dict):
     required = [
         "output_dir",
         "references",
-        "experiments",
+        "seq_dir",
         "samples"
     ]
     
@@ -117,7 +117,7 @@ def generate_directory_structure(config_dict):
     base_dir = config_dict["output_dir"]
     for req in required:
         Path(os.path.join(base_dir,req)).mkdir(parents=True, exist_ok=True)
-    for experiment in config_dict["experiments"]:
+    for experiment in config_dict["seq_dir"]:
         Path(
             os.path.dirname(config_dict["experiments"][experiment])
         ).mkdir(parents=True, exist_ok=True)
